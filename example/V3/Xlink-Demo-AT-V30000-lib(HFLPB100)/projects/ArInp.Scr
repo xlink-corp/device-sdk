@@ -1,0 +1,8 @@
+--create .\output\LPBS2W.lib
+.\output\startup.o
+.\output\xlink_config.o
+.\output\xlink_demo.o
+.\output\xlink_application.o
+.\output\xlink_at.o
+.\output\xlink_oat_hf.o
+..\sdk\1.50\libs\LPB100Kernel.lib

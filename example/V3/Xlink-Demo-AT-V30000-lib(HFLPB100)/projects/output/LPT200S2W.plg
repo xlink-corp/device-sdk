@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\my work\xlink\WIFI\Xlink SDK\·ÖÏí°æ±¾V2.1\Xlink Demo_AT_V24002_DEMO\projects\LPT200S2W.uvproj
+Project File Date:  04/07/2016
+
+<h2>Output:</h2>
+Build target 'LPT200S2W'
+linking...
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemSetWifiStatus (referred from xlink_application.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemTcpLoop (referred from xlink_application.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkGetSystemTime (referred from xlink_at.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkPorcess_UDP_Disable (referred from xlink_at.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkPorcess_UDP_Enable (referred from xlink_at.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkReSetSDK (referred from xlink_at.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemVersion (referred from xlink_at.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkGetServerTime (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSendTcpPipe2 (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSendUdpPipe (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemGetDeviceID (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemInit (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol XlinkSystemLoop (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol airkiss_lan_pack (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol airkiss_lan_recv (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol airkiss_version (referred from xlink_demo.o).
+.\output\LPT200S2W.axf: Error: L6218E: Undefined symbol akconf (referred from xlink_demo.o).
+".\output\LPT200S2W.axf" - 17 Errors, 0 Warning(s).
+Target not created
+Rebuild target 'LPT200S2W'
+compiling startup.c...
+..\src\startup.c(291): warning: A1488W: PROC/FUNC at line 82 in '..\\src\\startup.c' without matching ENDP/ENDFUNC
+compiling xlink_Application.c...
+compiling xlink_at.c...
+compiling xlink_config.c...
+compiling xlink_Demo.c...
+..\src\xlink_Demo.c(354): warning:  #177-D: variable "updateDP" was declared but never referenced
+..\src\xlink_Demo.c(356): warning:  #177-D: variable "data" was declared but never referenced
+..\src\xlink_Demo.c(357): warning:  #177-D: variable "datalen" was declared but never referenced
+compiling xlink_oat_hf.c...
+linking...
+LPBS2W.sct(14): warning: L6314W: No section matches pattern *.o(.mach2.init).
+LPBS2W.sct(18): warning: L6314W: No section matches pattern *.o(.mach6.init).
+LPBS2W.sct(19): warning: L6314W: No section matches pattern *.o(.mach7.init).
+LPBS2W.sct(23): warning: L6314W: No section matches pattern *.o(.shell0.cmd).
+LPBS2W.sct(25): warning: L6314W: No section matches pattern *.o(.shell2.cmd).
+Program Size: Code=357892 RO-data=23540 RW-data=7880 ZI-data=74776  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin --output ./output/LPT200S2W.bin ./output/LPT200S2W.axf
+After Build - User command #2: LPB100_IMG_Tools.exe ./output/LPT200S2W.bin ./output/LPT200S2W_UPGARDE.bin
+".\output\LPT200S2W.axf" - 0 Errors, 9 Warning(s).
+Rebuild target 'LPT200S2W'
+compiling startup.c...
+..\src\startup.c(291): warning: A1488W: PROC/FUNC at line 82 in '..\\src\\startup.c' without matching ENDP/ENDFUNC
+compiling xlink_Application.c...
+compiling xlink_at.c...
+compiling xlink_config.c...
+compiling xlink_Demo.c...
+..\src\xlink_Demo.c(354): warning:  #177-D: variable "updateDP" was declared but never referenced
+..\src\xlink_Demo.c(356): warning:  #177-D: variable "data" was declared but never referenced
+..\src\xlink_Demo.c(357): warning:  #177-D: variable "datalen" was declared but never referenced
+compiling xlink_oat_hf.c...
+linking...
+LPBS2W.sct(14): warning: L6314W: No section matches pattern *.o(.mach2.init).
+LPBS2W.sct(18): warning: L6314W: No section matches pattern *.o(.mach6.init).
+LPBS2W.sct(19): warning: L6314W: No section matches pattern *.o(.mach7.init).
+LPBS2W.sct(23): warning: L6314W: No section matches pattern *.o(.shell0.cmd).
+LPBS2W.sct(25): warning: L6314W: No section matches pattern *.o(.shell2.cmd).
+Program Size: Code=357892 RO-data=23540 RW-data=7880 ZI-data=74776  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin --output ./output/LPT200S2W.bin ./output/LPT200S2W.axf
+After Build - User command #2: LPB100_IMG_Tools.exe ./output/LPT200S2W.bin ./output/LPT200S2W_UPGARDE.bin
+".\output\LPT200S2W.axf" - 0 Errors, 9 Warning(s).
