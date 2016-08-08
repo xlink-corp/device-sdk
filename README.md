@@ -26,21 +26,21 @@ Copyright©2016  **云智易**物联云平台（http://www.xlink.cn）
 * 支持ARM、x86、x64以及MIPS等不同处理器架构；
 * 可移植性强，使用操作简单快捷。
 
-详细说明请参考[硬件SDK说明](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/1.XlinkSDK规范/1.SDK介绍.md "硬件SDK说明")。
+详细说明请参考[硬件SDK说明](https://github.com/xlink-corp/device-sdk/blob/master/docs/1.SDK介绍.md)。
 
 ### 硬件SDK及下载地址
 
 硬件SDK提供了常用的wifi模组SDK以及例程，如：汉枫的LPB100、LPT100和LPT200等，其他模组或者芯片型号可联系我司获得。
 
-设备SDK下载地址：[硬件SDK下载](https://github.com/xlink-corp/xlink-sdk/tree/master/设备端开发文档/1.XlinkSDK规范/SDK及固件)。
+设备SDK下载地址：[硬件SDK下载](https://github.com/xlink-corp/device-sdk/tree/master/example)。
 
 ### 硬件SDK接入流程
 
 接入流程示意图如下图所示：
 
-![](https://raw.githubusercontent.com/xlink-corp/xlink-sdk/master/设备端开发文档/1.XlinkSDK规范/images/硬件接入流程图.jpg)
+![](https://raw.githubusercontent.com/xlink-corp/device-sdk/master/docs/images/硬件接入流程图.jpg)
 
-详情请查看[SDK使用流程](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/1.XlinkSDK规范/2.SDK使用流程.md)。
+详情请查看[SDK使用流程](https://github.com/xlink-corp/device-sdk/blob/master/docs/2.SDK使用流程.md)。
 
 ### 硬件SDK接口说明
 
@@ -52,7 +52,7 @@ SDK配置|unsigned char XlinkSystemInit(char * product_id, char * product_key, X
 SDK主循环|void XlinkSystemLoop(xsdk_time_t c_time, x_int32 timeout_ms)
 公网连接|int XlinkSystemTcpLoop(void)
 
-详情请查看[硬件SDK接口](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/1.XlinkSDK规范/3.硬件SDK接口文档.md)。
+详情请查看[硬件SDK接口](https://github.com/xlink-corp/device-sdk/blob/master/docs/5.硬件SDK接口文档.md)。
 
 ### 数据端点使用说明
 
@@ -60,19 +60,19 @@ SDK主循环|void XlinkSystemLoop(xsdk_time_t c_time, x_int32 timeout_ms)
 
 主要流程如下图：
 
-![](https://raw.githubusercontent.com/xlink-corp/xlink-sdk/master/设备端开发文档/1.XlinkSDK规范/images/数据端点交互过程.jpg)
+![](https://raw.githubusercontent.com/xlink-corp/device-sdk/master/docs/images/数据端点交互过程.jpg)
 
-数据端点的数据格式、支持的数据类型以及对应接口的使用请参考[数据端点使用](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/1.XlinkSDK规范/4.数据端点文档.md)文档。
+数据端点的数据格式、支持的数据类型以及对应接口的使用请参考[数据端点使用](https://github.com/xlink-corp/device-sdk/blob/master/docs/4.数据端点文档.md)文档。
 
 ### 硬件通讯协议规范
 
 通常在数据透传上使用，因为对设备的操作需要一个通讯协议来支持，硬件通讯协调提供作为参考或使用。
 
-详情请查看[硬件通讯协议规范](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/2.设备通讯协议规范.md)。
+详情请查看[硬件通讯协议规范](https://github.com/xlink-corp/device-sdk/blob/master/docs/5.设备通讯协议规范.md)。
 
 ### 常见问题
 
-SDK在开发使用中遇到常见的问题，可参看[常见问题和解答](https://github.com/xlink-corp/xlink-sdk/blob/master/设备端开发文档/3.常见问题和解答.md)文档。
+SDK在开发使用中遇到常见的问题，可参看[常见问题和解答](https://github.com/xlink-corp/device-sdk/blob/master/docs/6.常见问题和解答.md)文档。
 
 
 Copyright©2016  **云智易**物联云平台（http://www.xlink.cn）
