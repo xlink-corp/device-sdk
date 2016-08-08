@@ -244,7 +244,7 @@
       <Focus>1</Focus>
       <ColumnNumber>24</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
+      <TopLine>2</TopLine>
       <CurrentLine>9</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\src\xlink_config.c</PathWithFileName>
@@ -258,9 +258,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>1</Focus>
-      <ColumnNumber>23</ColumnNumber>
+      <ColumnNumber>24</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>295</TopLine>
+      <TopLine>1</TopLine>
       <CurrentLine>301</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\src\xlink_Demo.c</PathWithFileName>
@@ -292,7 +292,7 @@
       <Focus>1</Focus>
       <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
+      <TopLine>2</TopLine>
       <CurrentLine>10</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\src\xlink_at.c</PathWithFileName>

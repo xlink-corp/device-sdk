@@ -81,6 +81,7 @@ extern XLINK_FUNC int XlinkPushData(unsigned char * data, x_int16 datalen);
 extern XLINK_FUNC void XlinkProcessUdpData( unsigned char * Buffer, unsigned int BufferLen, xlink_addr *addr);
 #if __ALL_DEVICE__
 extern void XLINK_FUNC setServerStatus_(unsigned char stat,unsigned char is80Port);
+extern XLINK_FUNC void XlinkInitData(void);
 #endif
 #ifdef  __cplusplus
 }

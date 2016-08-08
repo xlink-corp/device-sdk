@@ -239,10 +239,11 @@ N
 N#define __XLINK_STAND_HAIMAN__   0  //海曼科技部署
 N
 N//#define TEST_SERVER 
+N#define XLINK_AIRKISS_EN  0
 N
 N#if HF_SDK
 X#if 1
-N
+N#define   CLIENT_SSL_ENABLE  0//SSL 
 N#include "xlink_HF.h"
 L 1 "..\xlink\xlink_HF.h" 1
 N/*
@@ -9941,7 +9942,7 @@ N#ifdef  __cplusplus
 S}
 N#endif
 N#endif /* XLINK_HF_H_ */
-L 49 "..\xlink\Xlink_Head_Adaptation.h" 2
+L 50 "..\xlink\Xlink_Head_Adaptation.h" 2
 N#elif HF_SDK_A21
 S
 S#include "ic_head/xlink_HF_A21.h"
@@ -10183,6 +10184,7 @@ Xextern  void XlinkProcessUdpData( unsigned char * Buffer, unsigned int BufferLe
 N#if __ALL_DEVICE__
 X#if 0
 Sextern void XLINK_FUNC setServerStatus_(unsigned char stat,unsigned char is80Port);
+Sextern XLINK_FUNC void XlinkInitData(void);
 N#endif
 N#ifdef  __cplusplus
 S}

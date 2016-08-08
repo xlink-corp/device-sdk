@@ -8837,10 +8837,11 @@ N
 N#define __XLINK_STAND_HAIMAN__   0  //海曼科技部署
 N
 N//#define TEST_SERVER 
+N#define XLINK_AIRKISS_EN  0
 N
 N#if HF_SDK
 X#if 1
-N
+N#define   CLIENT_SSL_ENABLE  0//SSL 
 N#include "xlink_HF.h"
 L 1 "..\xlink\xlink_HF.h" 1
 N/*
@@ -9926,7 +9927,7 @@ N#ifdef  __cplusplus
 S}
 N#endif
 N#endif /* XLINK_HF_H_ */
-L 49 "..\xlink\Xlink_Head_Adaptation.h" 2
+L 50 "..\xlink\Xlink_Head_Adaptation.h" 2
 N#elif HF_SDK_A21
 S
 S#include "ic_head/xlink_HF_A21.h"
@@ -10168,6 +10169,7 @@ Xextern  void XlinkProcessUdpData( unsigned char * Buffer, unsigned int BufferLe
 N#if __ALL_DEVICE__
 X#if 0
 Sextern void XLINK_FUNC setServerStatus_(unsigned char stat,unsigned char is80Port);
+Sextern XLINK_FUNC void XlinkInitData(void);
 N#endif
 N#ifdef  __cplusplus
 S}
@@ -10703,7 +10705,7 @@ N	//time_t now=time(NULL);
 N//	hfdbg_set_level(DEBUG_LEVEL);
 N	//XlinkUartSend("App start .\r\n", sizeof("App start .\r\n"));
 N	HF_Debug(DEBUG_LEVEL, "sdk version(%s),the app_main start time is %s %s\n", hfsys_get_sdk_version(), __DATE__, __TIME__);
-X	HF_Debug(3, "sdk version(%s),the app_main start time is %s %s\n", hfsys_get_sdk_version(), "Jul 14 2016", "18:58:48");
+X	HF_Debug(3, "sdk version(%s),the app_main start time is %s %s\n", hfsys_get_sdk_version(), "Aug  8 2016", "16:34:05");
 N
 N	if (hfgpio_fmap_check(module_type) != 0) {
 N		while (1) {

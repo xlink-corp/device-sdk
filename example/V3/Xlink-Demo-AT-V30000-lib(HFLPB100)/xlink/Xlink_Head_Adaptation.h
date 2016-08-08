@@ -42,9 +42,10 @@ extern "C" {
 #define __XLINK_STAND_HAIMAN__   0  //海曼科技部署
 
 //#define TEST_SERVER 
+#define XLINK_AIRKISS_EN  0
 
 #if HF_SDK
-
+#define   CLIENT_SSL_ENABLE  0//SSL 
 #include "xlink_HF.h"
 #elif HF_SDK_A21
 
