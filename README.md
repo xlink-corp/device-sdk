@@ -52,7 +52,7 @@ SDK配置|unsigned char XlinkSystemInit(char * product_id, char * product_key, X
 SDK主循环|void XlinkSystemLoop(xsdk_time_t c_time, x_int32 timeout_ms)
 公网连接|int XlinkSystemTcpLoop(void)
 
-详情请查看[硬件SDK接口](https://github.com/xlink-corp/device-sdk/blob/master/docs/5.硬件SDK接口文档.md)。
+详情请查看[硬件SDK接口](https://github.com/xlink-corp/device-sdk/blob/master/docs/3.硬件SDK接口文档.md)。
 
 ### 数据端点使用说明
 
