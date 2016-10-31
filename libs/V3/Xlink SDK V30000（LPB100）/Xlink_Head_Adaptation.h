@@ -35,82 +35,16 @@ extern "C" {
 
 #define __XDEBUG__           	1
 
-#define __XLINK_VERSION__       30000
+#define __XLINK_VERSION__       33000
 
 #define __XLINK_BUFFER_PIPE__   1024
 
 #define __XLINK_STAND_HAIMAN__   0  //海曼科技部署
 
 //#define TEST_SERVER 
-#define XLINK_AIRKISS_EN  0
 
 #if HF_SDK
-#define   CLIENT_SSL_ENABLE  0//SSL 
 #include "xlink_HF.h"
-#elif HF_SDK_A21
-
-#include "ic_head/xlink_HF_A21.h"
-
-#elif  MARVELL_SDK
-
-#include "ic_head/xlink_MARVELL_200.h"
-
-#elif   QCA4004
-
-#include "ic_head/xlink_QCA4004.h"
-
-#elif   REALTEK
-
-#include "ic_head/xlink_REALTEK_8195.h"
-
-#elif REALTEK_8711
-
-#include "ic_head/xlink_REALTEK_8711.h"
-
-#elif   NL6621
-
-#include "ic_head/xlink_NL6621.h"
-
-#elif   __LWIP__ESP_8266
-
-#include "ic_head/xlink_ESP8266.h"
-
-#elif  __MT7681__
-
-#include "ic_head/xlink_MT7681.h"
-
-#elif __STM32F107__
-
-#include "ic_head/xlink_stm32_lwip.h"
-
-#elif __HED_10W07SN__
-
-#include "ic_head/xlink_HED10W07SN.h"
-
-#elif __LINUX__
-
-#include "ic_head/xlink_linux.h"
-
-#elif __LSD4WF_2MD05101__
-
-#include "ic_head/xlink_LSD4WF2MD05101.h"
-
-#elif __RTOS_STM32F103__
-
-#include "ic_head/xlink_stm32_rtos.h"
-
-#elif __STM32F103_UIP__
-
-#include "ic_head/xlink_stm32_uip.h"
-
-#elif __MXCHIP__
-
-#include "ic_head/xlink_MXCHIP_mico.h"
-
-#elif __ALL_DEVICE__
-
-#include "ic_head/xlink_All_Device.h"
-
 #endif
 
 

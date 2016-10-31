@@ -1,13 +1,4 @@
-/*
- * xlink_system.h
- *
- *  Created on: 2014骞�2鏈�9鏃�
- *      Author: john
- *
- * 绯荤粺鏇存敼娉ㄦ剰浜嬮」锛�
- *     1銆佹绯荤粺鏈�鑳藉鏀寔16涓鐐规暟鎹�
- *     2銆佸綋鍓嶆暟鎹鐐筬lag[4] 瀹氫箟浜�涓紦瀛樼┖闂淬�濡傞渶澧炲姞绔偣灏遍渶瑕佸鍔爁lag鐨勭┖闂�
- */
+
 
 #ifndef XLINK_SYSTEM_H_
 #define XLINK_SYSTEM_H_
@@ -15,7 +6,7 @@
 extern "C" {
 #endif
 #include "Xlink_Head_Adaptation.h"
-
+#include "Xlink_message.h"
 #if __ALL_DEVICE__
     enum TCP_ {
         E_TCP_SUCCESS, E_TCP_CONTINUE, //
@@ -79,6 +70,7 @@ extern XLINK_FUNC void Xlink_Close_Net(void);
 extern XLINK_FUNC int XlinkProcessTCPData(void);
 extern XLINK_FUNC int XlinkPushData(unsigned char * data, x_int16 datalen);
 extern XLINK_FUNC void XlinkProcessUdpData( unsigned char * Buffer, unsigned int BufferLen, xlink_addr *addr);
+extern int XlinkProcessUdpScan_V3_DefaultPort(xlink_Message * header,unsigned char * Buffer, unsigned int BufferLen,int socket, xlink_addr * addrBro,int addrBrolen);
 #if __ALL_DEVICE__
 extern void XLINK_FUNC setServerStatus_(unsigned char stat,unsigned char is80Port);
 extern XLINK_FUNC void XlinkInitData(void);

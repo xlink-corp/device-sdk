@@ -60,55 +60,39 @@ typedef enum XLINK_ERROR {
  * flash 瀛樺偍缁撴瀯
  */
 typedef struct XLINK_CONFIG_T {
-	union {/*淇濆瓨閰嶇疆淇℃伅*/
+	union {
 		unsigned char All;
 		struct {
-			unsigned char isActivation :1;/*鏄惁婵�椿*/
-			unsigned char isUpgrade :1;/*鏄惁鍗囩骇*/
-			unsigned char isSaveDevicekey :1;/*鏄惁淇濆瓨浜哾evice key*/
-			unsigned char isAppSetName :1;/*APP鏇存敼鍚嶅瓧*/
-			unsigned char isChangedPassword :1;/*鏄惁淇敼瀵嗙爜*/
-			unsigned char isSetPassword :1;/*鏄惁宸茬粡璁惧畾瀵嗙爜*/
-			unsigned char isAppSetPasswork :1;/*鏄惁鏄疉PP宸茬粡璁惧畾瀵嗙爜,App璁惧畾瀵嗙爜鍚庤澶囦笉鑳戒慨鏀瑰瘑鐮*/
+			unsigned char isActivation :1;
+			unsigned char isUpgrade :1;
+			unsigned char isSaveDevicekey :1;
+			unsigned char isAppSetName :1;
+			unsigned char isChangedPassword :1;
+			unsigned char isSetPassword :1;
+			unsigned char isAppSetPasswork :1;
 			unsigned char res :1;
 		} Bit;
 	} flag;
-	unsigned char  Deviceid[4];/*淇濆瓨Deviceid*/
+	unsigned char  Deviceid[4];
 	unsigned short CurrentSoftVersion;
 } xlink_SdkConfig;
 
 
 
 
-//typedef enum XLINK_DATA_TYPE {
-//	XLINK_NONE = 0, //
-//	XLINK_BYTE = 1,/*1byte*/
-//	XLINK_INT16 = 2,/*2byte*/
-//	XLINK_INT32 = 3, /*4byte*/
-//} XLINK_DATA_TYPE;
 
-//typedef struct XLINK_DATAPOINT {
-//	XLINK_DATA_TYPE type;/*鏁版嵁绫诲瀷*/
-//	unsigned char index; /*绱㈠紩涓嬫爣*/
-//	unsigned char used; /*鏄惁鏈夋剰涔�/
-//	unsigned char flag; /*鍦ㄧ綉缁滈�淇′腑鏍囪瘑*/
-//	unsigned short DataSize;/*姝ゆ暟鎹殑澶у皬  瀛楃涓茬被鍨嬫瘡娆′慨鏀规暟鎹渶瑕佸湪瀛楃涓查暱搴︿笂+2 锛堝姞涓婃爣璇嗘暟鎹暱搴︾殑2yte锛�/
-//	unsigned int v_data;
-//} XLINK_DATAPOINT;
 
 typedef enum XLINK_APP_STATUS {
-	XLINK_WIFI_STA_PRO_TESTCOMPLETE=0X02,//浜ф祴瀹屾垚
-	XLINK_WIFI_STA_CONNECT_SERVER = 0X04,  //閾炬帴涓婁簯鏈嶅姟鍣�
-	XLINK_WIFI_STA_DISCONNCT_SERVER = 0X08,  //涓庝簯鏈嶅姟鍣ㄦ柇寮�摼鎺�
-	XLINK_WIFI_STA_APP_CONNECT = 0X10,  //APP杩炴帴
-	XLINK_WIFI_STA_APP_DISCONNECT = 0X20,  //APP 鏂紑杩炴帴
-	XLINK_WIFI_STA_APP_TIMEOUT = 0X40,  //APP 瓒呮椂
-	XLINK_WIFI_STA_LOGIN_SUCCESS = 0X80,  //鐧诲綍鍏綉鏈嶅姟鍣ㄦ垚鍔�
+	XLINK_WIFI_STA_PRO_TESTCOMPLETE=0X02,
+	XLINK_WIFI_STA_CONNECT_SERVER = 0X04, 
+	XLINK_WIFI_STA_DISCONNCT_SERVER = 0X08,
+	XLINK_WIFI_STA_APP_CONNECT = 0X10,  
+	XLINK_WIFI_STA_APP_DISCONNECT = 0X20, 
+	XLINK_WIFI_STA_APP_TIMEOUT = 0X40,  
+	XLINK_WIFI_STA_LOGIN_SUCCESS = 0X80, 
 } XLINK_APP_STATUS;
 
-/**
- * 鎺ユ敹鍒版湇鍔″櫒鎺ㄩ�鍗囩骇淇℃伅
- */
+
 typedef struct XLINK_UPGRADE_FUN {
 	unsigned int fileSize;
 	char *checkStr;

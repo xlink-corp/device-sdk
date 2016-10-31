@@ -19,6 +19,16 @@ extern "C" {
 #include <hfsys.h>
 #include <hfnet.h>
 #include <hfuart.h>
+	
+
+	
+#if CLIENT_SSL_ENABLE	
+#include <cyassl/openssl/ssl.h>
+#include <cyassl/internal.h>
+#include <cyassl/cyassl_config.h>
+#endif
+
+ 
 
 #define  XLINK_FUNC   //USER_FUNC
 
@@ -39,6 +49,21 @@ extern "C" {
 #define   xlink_recvfrom       recvfrom
 #define   xlink_sendto         sendto
 #define   xlink_send           send
+
+///////////////////////
+//ssl
+#if CLIENT_SSL_ENABLE
+#define   xlink_ssl_send           CyaSSL_write
+#define   xlink_ssl_recv           CyaSSL_read
+#define   xlink_ssl_connect        CyaSSL_connect
+#else
+#define   xlink_send           		 send
+#define   xlink_recv               recv
+#endif
+
+///////////////////////
+
+
 #define   xlink_close(x)      close(x)
 #define   xlink_set_fd        fd_set
 #define   xlink_select(a,b,c,d,e)       hfuart_select(a,b,c,d,e)

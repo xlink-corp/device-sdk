@@ -1,7 +1,7 @@
 /*
  * xsdk_config.h
  *
- *  Created on: 2015年8月2日
+ *  Created on: 2015骞�8鏈�2鏃�
  *      Author: XT800
  */
 
@@ -12,7 +12,8 @@ extern "C" {
 #endif
 #include "Xlink_Head_Adaptation.h"
 
-#define XLINK_CONFIG_BUFFER_SIZE__ 100
+#define XLINK_CONFIG_BUFFER_SIZE__ 128
+#define XLINK_DOMAIN_IP_MAX_LEN  32
 
 extern XLINK_FUNC int xsdk_config_init(char *proID,char *proKey,unsigned char *mac);
 extern XLINK_FUNC int xsdk_write_config(unsigned int index, char *p_data, unsigned int p_datalen);
@@ -33,7 +34,7 @@ extern XLINK_FUNC void XlinkSetACK(int accesskey);
 extern XLINK_FUNC int XlinkGetACK(void);
 
 //#define TICKS_DIFF(cur, prev) ((cur) >= (prev)) ? ((cur)-(prev)) : ((0xFFFFFFFF-(prev))+(cur)+1)
-extern XLINK_FUNC int xlink_ticks_diff(xsdk_time_t current,xsdk_time_t prev);
+//extern XLINK_FUNC int xlink_ticks_diff(xsdk_time_t current,xsdk_time_t prev);
 
 #define __XLINK_LOCAL_PORT__ 5987
 

@@ -90,6 +90,8 @@ typedef struct XLINK_INFO_T {
 		} bit;
 	} flag;
 	xsdk_time_t g_XlinkSdkTime;	
+	
+	int domain_connect_times;
 } G_XLINK_INFO;
 
 /*杞欢鍗忚鐗堟湰*/
